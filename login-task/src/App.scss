@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@100&display=swap");
+.App {
+  text-align: center;
+  height: 100vh;
+  font-family: "Josefin Sans, Myriad Pro Regular";
+  position: relative;
+  display: flex;
+  justify-content: center;
+  .pointer{
+    cursor: pointer;
+  }
+  .cover-page {
+    width: 100%;
+    height: 40%;
+    background-image: url("./assets/coverbg.png");
+    background-size: cover; /* Adjust the image size to cover the container */
+    background-position: center; /* Position the image at the center */
+    background-repeat: no-repeat;
+  }
+  .login-content {
+    position: absolute;
+    // border: 1px solid;
+    height: 90%;
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    top: 12%;
+    background: #fff;
+    .login-top {
+      height: auto;
+      width: 100%;
+      padding: 2%;
+      box-shadow: 0px 3px 7px #00000029;
+      img {
+        // height: 100%;
+        width: 25%;
+      }
+    }
+    .login-center {
+      .heading {
+        padding: 3% 0;
+        font-family: "Josefin Sans";
+        font-size: 29px;
+        color: #20b716;
+        line-height: 35px;
+        font-weight: normal;
+        font-style: normal;
+      }
+      .tree {
+        img {
+          width: 74%;
+        }
+      }
+    }
+  }
+  .login-fields {
+    padding: 0 12%;
+    .input-page{
+
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      .MuiFormControl-root {
+        width: 96%;
+        .MuiFormLabel-root {
+          font-family: "Josefin Sans";
+          font-size: 16px;
+          color: #20b716;
+          line-height: 19px;
+          font-weight: normal;
+          font-style: normal;
+        }
+        input {
+          border-bottom: 4px solid #e2e8f0 !important;
+          z-index: 99;
+          cursor: pointer;
+        }
+      }
+      .err-msg {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 3%;
+        img {
+          height: 3%;
+          width: 7%;
+        }
+        div {
+          color: #ee2d6e;
+          display: flex;
+          align-items: center;
+          width: 90%;
+           font-family: "Myriad Pro Regular";
+      font-size: 13px;
+      // color:#20B716;
+      line-height: 19px;
+      font-weight: normal;
+      font-style: normal;
+        }
+      }
+    }
+        .sign-btn {
+      background: #20b716 0% 0% no-repeat padding-box;
+      border-radius: 40px;
+      padding: 5% 0;
+      width: 100%;
+      color: #fff;
+      margin-top: 6%;
+      border: none;
+      font-family: "Josefin Sans";
+      font-size: 19px;
+      // color:#20B716;
+      line-height: 23px;
+      font-weight: normal;
+      font-style: normal;
+    }
+  }
+  }
+  .login-bottom {
+    padding: 2% 14%;
+    .log-option-top {
+      display: flex;
+      justify-content: space-between;
+      font-family: "Josefin Sans";
+      font-size: 12px;
+      // color:#20B716;
+      line-height: 18px;
+      font-weight: normal;
+      font-style: normal;
+      .log-option-top-right {
+        color: #d9185f;
+      }
+    }
+    .login-option-center {
+      padding: 8%;
+      font-family: "Josefin Sans";
+      font-size: 16px;
+      // color:#20B716;
+      line-height: 19px;
+      font-weight: normal;
+      font-style: normal;
+    }
+    .login-option-bottom {
+      .log-option {
+        display: flex;
+        justify-content: space-between;
+        padding: 1%;
+        align-items: center;
+        img {
+          height: 7%;
+          width: 12%;
+          min-width: 2em;
+        }
+        .btn-text {
+          width: 80%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          font-family: "Josefin Sans";
+          font-size: 100%;
+          // color:#20B716;
+          line-height: 18px;
+          font-weight: 600;
+          font-style: normal;
+        }
+      }
+      .google {
+        background: #4285f4;
+        margin-bottom: 3%;
+      }
+      .fb {
+        background: #1877f2;
+      }
+    }
+  }
+}
+
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('fonts/Myriad\ Pro\ Regular.ttf') format('truetype');
+  /* Add additional font properties if needed */
+}
+@media screen and (max-width: 400px) and (min-width: 200px) {
+  /* CSS rules for screens up to 768px wide */
+  .btn-text{
+    font-size: 45% !important;
+  }
+  .login-top{
+    padding: 8% 0% !important;
+    img{
+      width: 50% !important;
+    }
+  }
+  .log-option-top{
+    font-size: 56% !important;
+  }
+  .err-msg {img {
+    width: 16% !important;
+  }
+  div{
+    font-size: 57% !important;
+  }
+  
+}
+.heading{
+    font-size: 100% !important;
+  }
+}
