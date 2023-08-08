@@ -1,281 +1,62 @@
-  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@100&display=swap");
 
-  .App {
-    text-align: center;
-    font-family: "Josefin Sans, Myriad Pro Regular, Ahganriya, Magica, distant, story";
-    width: 100%;
+.App {
+  text-align: center;
+  font-family: "Josefin Sans, Myriad Pro Regular, Ahganriya, Magica, distant, story";
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  // padding: 5% 0 0 0;
+  .pointer {
+    cursor: pointer;
+  }
+  .add-page {
+    margin: 2% 3%;
+    height: 75%;
+    width: 80%;
+    background: #f7f2ee;
+    border-radius: 30px;
     display: flex;
-    height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    // padding: 5% 0 0 0;
-    .pointer {
-      cursor: pointer;
-    }
-    .add-page {
-      margin: 2% 3%;
-      height: 75%;
-      width: 80%;
-      background: #f7f2ee;
-      border-radius: 30px;
+    overflow-x: hidden;
+    flex-flow: wrap;
+    padding: 2% 4%;
+    flex-direction: column;
+    .btn-section {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      overflow-x: hidden;
-      flex-flow: wrap;
-      padding: 2% 4%;
-      flex-direction: column;
-      .btn-section {
-        display: flex;
-        width: 71%;
-        height: 9%;
-        /* min-height: 3em; */
-        justify-content: space-around;
-        .submit-btn {
-          background: #d9185f;
-          color: #fff;
-          &:hover {
-            color: #d9185f;
-            background-color: #fff;
-          }
-        }
-        .cancel-btn {
-          background-color: #fff;
-          &:hover {
-            color: #d9185f;
-          }
-        }
-        .add-btn {
-          max-width: 6em;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          // position: absolute;
-          padding: 1%;
-          top: 1%;
-          right: 8%;
-
-          border-radius: 10px;
-          letter-spacing: 0em;
-          font-family: "Josefin Sans";
-          font-size: 22px;
-          line-height: 20px;
-          font-weight: normal;
-          font-style: normal;
-          text-transform: capitalize;
-          svg {
-            height: 6%;
-            width: 13%;
-            path {
-              fill: #fff;
-            }
-          }
-        }
-      }
-      .add-field {
-        width: 100%;
-        .add-heading {
-          font-family: "Josefin Sans";
-          font-size: 28px;
-          line-height: 20px;
-          font-weight: normal;
-          font-style: normal;
-          color: #d9185f;
-          text-align: left;
-          margin-bottom: 1%;
-        }
-        .MuiTextarea-root {
-          min-height: 18em;
-        }
-      }
-
-      .snackbar-page {
-        position: absolute;
-        bottom: 4%;
-        right: 6%;
-        height: 9%;
-        width: 18%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #fff;
-        font-family: "Josefin Sans";
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: normal;
-        font-style: normal;
-        background: #e3dbf7;
-        /* color: #fff; */
-        border-radius: 10px;
-      }
-    }
-    .homepage {
-      width: 100%;
-      .heading {
-        font-family: "Josefin Sans";
-        font-size: 48px;
-        line-height: 63px;
-        width: 100%;
-        font-weight: normal;
-        font-style: normal;
-        color: #d9185f;
-        height: -moz-fit-content;
-        height: fit-content;
-        text-transform: capitalize;
-      }
-    }
-    .page-info,
-    .homepage {
-      display: flex;
-      margin: 2% 3%;
-      height: 75%;
-      flex-direction: column;
-      justify-content: space-between;
-      background: #f7f2ee;
-      align-items: flex-start;
-      border-radius: 30px;
-      // padding: 3% !important;
-
-      // overflow-x: hidden;
-      // flex-flow: wrap;
-      padding: 2% 4%;
-      align-items: flex-start;
-      .add-btn {
-        max-width: 4em;
-        max-height: 7%;
-        width: 9%;
-        display: flex;
-        align-items: flex-start;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        // position: absolute;
-        padding: 1%;
-        top: 1%;
-        right: 8%;
+      width: 71%;
+      height: 9%;
+      /* min-height: 3em; */
+      justify-content: space-around;
+      .submit-btn {
         background: #d9185f;
-        border-radius: 10px;
         color: #fff;
-        letter-spacing: 0em;
-        font-family: "Josefin Sans";
-        font-size: 22px;
-        line-height: 20px;
-        font-weight: normal;
-        font-style: normal;
-        text-transform: capitalize;
-        img {
-          height: 60%;
-          width: 28%;
-        }
-      }
-      .page-heading {
-        font-family: "story";
-        font-size: 48px;
-        line-height: 63px;
-        width: 100%;
-        font-weight: normal;
-        // text-transform: capitalize;
-        font-style: normal;
-        color: #d9185f;
-        height: fit-content;
-      }
-      .page-desc {
-        font-family: "distant";
-        font-size: 22px;
-        line-height: 44px;
-        font-weight: normal;
-        text-transform: capitalize;
-        font-style: normal;
-        color: #5f525c;
-        margin-top: 3%;
-      }
-      .btn-section {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        min-height: 3em;
-        justify-content: space-around;
-        .submit-btn {
-          // background: #d9185f;
-          color: #fff;
-          &:hover {
-            color: #d9185f;
-            background-color: #fff;
-          }
-        }
-        .cancel-btn {
+        &:hover {
+          color: #d9185f;
           background-color: #fff;
-          &:hover {
-            color: #d9185f;
-          }
-        }
-        .btn {
-          width: 45%;
-          height: 74%;
-          align-self: center;
-          // max-width: 6em;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          // position: absolute;
-          // padding: 1%;
-          top: 1%;
-          right: 8%;
-
-          border-radius: 10px;
-          letter-spacing: 0em;
-          font-family: "Josefin Sans";
-          font-size: 22px;
-          line-height: 20px;
-          font-weight: normal;
-          font-style: normal;
-          text-transform: capitalize;
-          img {
-            height: 100%;
-            width: 100%;
-          }
-          // svg {
-          //   height: 6%;
-          //   width: 13%;
-          //   path {
-          //     fill: #fff;
-          //   }
-          // }
         }
       }
-    }
-    // .page-info,
-    // .card-page {
-    //   // justify-content: flex-start;
-    //   display: flex;
-    //   // width: 95%;
-    // }
-    .card-page {
-      overflow-x: hidden;
-      height: 76%;
-      align-self: flex-start;
-      width: 96%;
-      flex-wrap: wrap;
-      display: flex;
-
-      margin: 5% 4% 0 4%;
-      align-items: flex-start;
-      // flex-direction: column;
-      overflow-y: auto;
-      justify-content: space-between;
+      .cancel-btn {
+        background-color: #fff;
+        &:hover {
+          color: #d9185f;
+        }
+      }
       .add-btn {
         max-width: 6em;
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        position: absolute;
+        align-items: center;
+        // position: absolute;
         padding: 1%;
         top: 1%;
         right: 8%;
-        background: #d9185f;
+
         border-radius: 10px;
-        color: #fff;
         letter-spacing: 0em;
         font-family: "Josefin Sans";
         font-size: 22px;
@@ -291,41 +72,299 @@
           }
         }
       }
-      .back{
-            z-index: 999;
+    }
+    .add-field {
+      width: 100%;
+      .add-heading {
+        font-family: "Josefin Sans";
+        font-size: 28px;
+        line-height: 20px;
+        font-weight: normal;
+        font-style: normal;
+        color: #d9185f;
+        text-align: left;
+        margin-bottom: 1%;
+      }
+      .MuiTextarea-root {
+        min-height: 18em;
+      }
+    }
+
+    .snackbar-page {
+      position: absolute;
+      bottom: 4%;
+      right: 6%;
+      height: 9%;
+      width: 18%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+      font-family: "Josefin Sans";
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: normal;
+      font-style: normal;
+      background: #e3dbf7;
+      /* color: #fff; */
+      border-radius: 10px;
+    }
+  }
+  .homepage {
+    width: 100%;
+    .heading {
+      font-family: "Josefin Sans";
+      font-size: 48px;
+      line-height: 63px;
+      width: 100%;
+      font-weight: normal;
+      font-style: normal;
+      color: #d9185f;
+      height: -moz-fit-content;
+      height: fit-content;
+      text-transform: capitalize;
+    }
+  }
+  .page-info,
+  .homepage {
+    display: flex;
+    margin: 2% 3%;
+    height: 75%;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #f7f2ee;
+    align-items: flex-start;
+    border-radius: 30px;
+    // padding: 3% !important;
+
+    // overflow-x: hidden;
+    // flex-flow: wrap;
+    padding: 2% 4%;
+    align-items: flex-start;
+    .add-btn {
+      max-width: 4em;
+      max-height: 7%;
+      width: 9%;
+      display: flex;
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      // position: absolute;
+      padding: 1%;
+      top: 1%;
+      right: 8%;
+      background: #d9185f;
+      border-radius: 10px;
+      color: #fff;
+      letter-spacing: 0em;
+      font-family: "Josefin Sans";
+      font-size: 22px;
+      line-height: 20px;
+      font-weight: normal;
+      font-style: normal;
+      text-transform: capitalize;
+      img {
+        height: 60%;
+        width: 28%;
+      }
+    }
+    .page-heading {
+      font-family: "story";
+      font-size: 48px;
+      line-height: 63px;
+      width: 100%;
+      font-weight: normal;
+      // text-transform: capitalize;
+      font-style: normal;
+      color: #d9185f;
+      height: fit-content;
+    }
+    .page-desc {
+      font-family: "distant";
+      font-size: 22px;
+      line-height: 44px;
+      font-weight: normal;
+      text-transform: capitalize;
+      font-style: normal;
+      color: #5f525c;
+      margin-top: 3%;
+    }
+    .btn-section {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      min-height: 3em;
+      justify-content: space-around;
+      .submit-btn {
+        // background: #d9185f;
+        color: #fff;
+        &:hover {
+          color: #d9185f;
+          background-color: #fff;
+        }
+      }
+      .cancel-btn {
+        background-color: #fff;
+        &:hover {
+          color: #d9185f;
+        }
+      }
+      .btn {
+        width: 45%;
+        height: 74%;
+        align-self: center;
+        // max-width: 6em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // position: absolute;
+        // padding: 1%;
+        top: 1%;
+        right: 8%;
+
+        border-radius: 10px;
+        letter-spacing: 0em;
+        font-family: "Josefin Sans";
+        font-size: 22px;
+        line-height: 20px;
+        font-weight: normal;
+        font-style: normal;
+        text-transform: capitalize;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        // svg {
+        //   height: 6%;
+        //   width: 13%;
+        //   path {
+        //     fill: #fff;
+        //   }
+        // }
+      }
+    }
+  }
+  // .page-info,
+  // .card-page {
+  //   // justify-content: flex-start;
+  //   display: flex;
+  //   // width: 95%;
+  // }
+  .card-page {
+    overflow-x: hidden;
+    height: 76%;
+    align-self: flex-start;
+    width: 96%;
+    flex-wrap: wrap;
+    display: flex;
+
+    margin: 5% 4% 0 4%;
+    align-items: flex-start;
+    // flex-direction: column;
+    overflow-y: auto;
+    justify-content: space-between;
+    .add-btn {
+      max-width: 6em;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      position: absolute;
+      padding: 1%;
+      top: 1%;
+      right: 8%;
+      background: #d9185f;
+      border-radius: 10px;
+      color: #fff;
+      letter-spacing: 0em;
+      font-family: "Josefin Sans";
+      font-size: 22px;
+      line-height: 20px;
+      font-weight: normal;
+      font-style: normal;
+      text-transform: capitalize;
+      svg {
+        height: 6%;
+        width: 13%;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+    .back {
+      z-index: 999;
       position: absolute;
       left: 4% !important;
       top: 1% !important;
       width: 7%;
       img {
-          height: 60%;
-          width: 28%;
+        height: 60%;
+        width: 28%;
+      }
+    }
+    .drop-page {
+      position: absolute;
+      top: 2%;
+      right: 22%;
+      width: 12%;
+      /* border: 1px solid; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      label {
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal;
+        font-style: normal;
+      }
+    }
+    .MuiPaper-root {
+      // max-height: 10em;
+      min-width: 23em;
+      max-height: 18em;
+      margin: 2% 2% 0 0;
+      .MuiButtonBase-root {
+        height: 100%;
+        font-family: "Josefin Sans" !important;
+        font-size: 22px !important;
+        line-height: 18px !important;
+        font-weight: normal !important;
+        text-transform: capitalize !important;
+        font-style: normal !important;
+        color: #d9185f;
+        text-align: center;
+        .MuiCardContent-root {
+          height: 83%;
+          // border: 1px solid red;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
         }
       }
-      .drop-page {
-        position: absolute;
-        top: 2%;
-        right: 22%;
-        width: 12%;
-        /* border: 1px solid; */
+      p {
+        font-family: "Josefin Sans";
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal;
+        font-style: normal;
+        /* color: #d9185f; */
+        text-align: left;
+      }
+    }
+    .paginate {
+      position: absolute;
+      bottom: 3%;
+      right: 9%;
+      min-width: 80%;
+      div {
+        width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        label {
-          font-family: "Josefin Sans";
-          font-size: 16px;
-          line-height: 20px;
-          font-weight: normal;
-          font-style: normal;
-        }
-      }
-      .MuiPaper-root {
-        // max-height: 10em;
-        min-width: 23em;
-        max-height: 18em;
-        margin: 2% 2% 0 0;
-        .MuiButtonBase-root {
-          height: 100%;
+        button {
+          border: none;
+          padding: 1% 2%;
+          background: none;
           font-family: "Josefin Sans" !important;
           font-size: 22px !important;
           line-height: 18px !important;
@@ -334,73 +373,34 @@
           font-style: normal !important;
           color: #d9185f;
           text-align: center;
-          .MuiCardContent-root {
-            height: 83%;
+          &:hover {
             // border: 1px solid red;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            background-color: #d9185f1a;
+          }
+          &:active {
+            background-color: #d9185f4d;
           }
         }
-        p {
-          font-family: "Josefin Sans";
-          font-size: 16px;
-          line-height: 20px;
-          font-weight: normal;
-          font-style: normal;
-          /* color: #d9185f; */
-          text-align: left;
+        .disable {
+          color: #0000004d;
+          cursor: not-allowed;
         }
-      }
-      .paginate {
-        position: absolute;
-        bottom: 3%;
-        right: 9%;
-        min-width: 80%;
-        div {
-          width: 100%;
-          display: flex;
-          justify-content: space-between;
-          button {
-            border: none;
-            padding: 1% 2%;
-            background: none;
-            font-family: "Josefin Sans" !important;
-            font-size: 22px !important;
-            line-height: 18px !important;
-            font-weight: normal !important;
-            text-transform: capitalize !important;
-            font-style: normal !important;
-            color: #d9185f;
-            text-align: center;
-            &:hover {
-              // border: 1px solid red;
-              background-color: #d9185f1a;
-            }
-            &:active {
-              background-color: #d9185f4d;
-            }
-          }
-          .disable {
-            color: #0000004d;
-            cursor: not-allowed;
-          }
-          .selected {
-            color: #000000b3;
-          }
+        .selected {
+          color: #000000b3;
         }
-      }
-      &::-webkit-scrollbar {
-        display: none;
       }
     }
-    .login-page{
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .cover-page {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .login-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cover-page {
       position: absolute;
       top: 0;
       width: 100%;
@@ -568,585 +568,603 @@
       }
     }
     .add-btn {
-          z-index: 999;
+      z-index: 999;
       position: absolute;
       left: 4%;
       top: 4%;
-        max-width: 4em;
-        max-height: 7%;
-        width: 9%;
-        display: flex;
-        align-items: flex-start;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        // position: absolute;
-        padding: 1%;
-        top: 1%;
-        right: 8%;
-        background: #d9185f;
-        border-radius: 10px;
-        color: #fff;
-        letter-spacing: 0em;
-        font-family: "Josefin Sans";
-        font-size: 22px;
-        line-height: 20px;
-        font-weight: normal;
-        font-style: normal;
-        text-transform: capitalize;
-        img {
-          height: 60%;
-          width: 28%;
-        }
+      max-width: 4em;
+      max-height: 7%;
+      width: 9%;
+      display: flex;
+      align-items: flex-start;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      // position: absolute;
+      padding: 1%;
+      top: 1%;
+      right: 8%;
+      background: #d9185f;
+      border-radius: 10px;
+      color: #fff;
+      letter-spacing: 0em;
+      font-family: "Josefin Sans";
+      font-size: 22px;
+      line-height: 20px;
+      font-weight: normal;
+      font-style: normal;
+      text-transform: capitalize;
+      img {
+        height: 60%;
+        width: 28%;
       }
     }
-    
   }
+}
 
-  @font-face {
-    font-family: "Magica";
-    src: url("fonts/Magica.ttf") format("truetype");
-    /* Add additional font properties if needed */
-  }
-  @font-face {
-    font-family: "Ahganriya";
-    src: url("fonts/Ahganirya.ttf") format("truetype");
-    /* Add additional font properties if needed */
-  }
-  @font-face {
-    font-family: "Myriad Pro Regular";
-    src: url("fonts/Myriad\ Pro\ Regular.ttf") format("truetype");
-    /* Add additional font properties if needed */
-  }
-  @font-face {
-    font-family: "story";
-    src: url("fonts/story.ttf") format("truetype");
-    /* Add additional font properties if needed */
-  }
-  @font-face {
-    font-family: "distant";
-    src: url("fonts/distant.otf") format("opentype");
-    /* Add additional font properties if needed */
-  }
-  @media screen and (max-width: 300px) and (min-width: 200px) {
-    .App {
-      width: 100%;
-      .card-page {
-        margin: 20% 0% 0 0% !important;
-        width: 86% !important;
-        .add-btn {
-          padding: 3% 1% !important;
-          font-size: 107% !important;
+@font-face {
+  font-family: "Magica";
+  src: url("fonts/Magica.ttf") format("truetype");
+  /* Add additional font properties if needed */
+}
+@font-face {
+  font-family: "Ahganriya";
+  src: url("fonts/Ahganirya.ttf") format("truetype");
+  /* Add additional font properties if needed */
+}
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("fonts/Myriad\ Pro\ Regular.ttf") format("truetype");
+  /* Add additional font properties if needed */
+}
+@font-face {
+  font-family: "story";
+  src: url("fonts/story.ttf") format("truetype");
+  /* Add additional font properties if needed */
+}
+@font-face {
+  font-family: "distant";
+  src: url("fonts/distant.otf") format("opentype");
+  /* Add additional font properties if needed */
+}
+@media screen and (max-width: 300px) and (min-width: 200px) {
+  .App {
+    width: 100%;
+    .card-page {
+      margin: 20% 0% 0 0% !important;
+      width: 86% !important;
+      .add-btn {
+        padding: 3% 1% !important;
+        font-size: 107% !important;
+      }
+      .back {
+        top: 2% !important;
+        width: 20%;
+      }
+      .drop-page {
+        top: 1% !important;
+        right: unset !important;
+        left: 0;
+        height: 8%;
+        width: 49% !important;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        label {
+          font-size: 131%;
         }
-        .drop-page {
-          top: 1% !important;
-          right: unset !important;
-          left: 0;
-          height: 8%;
-          width: 49% !important;
-          display: flex;
-          justify-content: flex-end;
-          align-items: baseline;
-          label {
-            font-size: 131%;
-          }
-        }
-        .MuiPaper-root {
-          min-width: unset !important;
-          width: 97%;
-          button {
-            .MuiCardContent-root {
-              .MuiTypography-h5 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 1;
-              }
-              .MuiTypography-body2 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-              }
+      }
+      .MuiPaper-root {
+        min-width: unset !important;
+        width: 97%;
+        button {
+          .MuiCardContent-root {
+            .MuiTypography-h5 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+            }
+            .MuiTypography-body2 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 4;
             }
           }
         }
-        .paginate {
-          bottom: 3% !important;
-          right: 17% !important;
-          div {
-            width: 53% !important;
-          }
-        }
       }
-      .page-info {
-        height: 90% !important;
-        .add-btn {
-          width: 35% !important;
-          align-items: center !important;
-          padding: 3% !important;
-        }
-      }
-      .add-page {
-        height: 90% !important;
-        padding: 4% !important;
-        .add-field {
-          .add-heading {
-            margin-bottom: 4% !important;
-          }
-          .MuiTextarea-root {
-            min-width: 1%;
-          }
-        }
-        .add-btn {
-          padding: 3% !important;
-        }
-      }
-      .btn-text {
-        font-size: 45% !important;
-      }
-      .login-top {
-        padding: 8% 0% !important;
-        img {
-          width: 50% !important;
-        }
-      }
-      .log-option-top {
-        font-size: 56% !important;
-      }
-      .err-msg {
-        img {
-          width: 16% !important;
-        }
+      .paginate {
+        bottom: 3% !important;
+        right: 17% !important;
         div {
-          font-size: 57% !important;
+          width: 53% !important;
         }
       }
-      .heading {
-        font-size: 100% !important;
+    }
+    .page-info {
+      height: 90% !important;
+      .add-btn {
+        width: 35% !important;
+        align-items: center !important;
+        padding: 3% !important;
       }
-      .login-content{
+    }
+    .add-page {
+      height: 90% !important;
+      padding: 4% !important;
+      .add-field {
+        .add-heading {
+          margin-bottom: 4% !important;
+        }
+        .MuiTextarea-root {
+          min-width: 1%;
+        }
+      }
+      .add-btn {
+        padding: 3% !important;
+      }
+    }
+    .btn-text {
+      font-size: 45% !important;
+    }
+    .login-top {
+      padding: 8% 0% !important;
+      img {
+        width: 50% !important;
+      }
+    }
+    .log-option-top {
+      font-size: 56% !important;
+    }
+    .err-msg {
+      img {
+        width: 16% !important;
+      }
+      div {
+        font-size: 57% !important;
+      }
+    }
+    .heading {
+      font-size: 100% !important;
+    }
+    .login-content {
       width: 76% !important;
     }
-    }
   }
-  @media screen and (max-width: 400px) and (min-width: 301px) {
-    .App {
-      width: 100%;
-      .card-page {
-        margin: 20% 0% 0 0% !important;
-        width: 86% !important;
-        .add-btn {
-          padding: 3% 1% !important;
-          font-size: 107% !important;
+}
+@media screen and (max-width: 400px) and (min-width: 301px) {
+  .App {
+    width: 100%;
+    .card-page {
+      margin: 20% 0% 0 0% !important;
+      width: 86% !important;
+      .add-btn {
+        padding: 3% 1% !important;
+        font-size: 107% !important;
+      }
+      .back {
+        left: 4% !important;
+        width: 27%;
+      }
+      .drop-page {
+        top: 1% !important;
+        right: unset !important;
+        left: 0;
+        height: 8%;
+        width: 49% !important;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        label {
+          font-size: 131%;
         }
-        .drop-page {
-          top: 1% !important;
-          right: unset !important;
-          left: 0;
-          height: 8%;
-          width: 49% !important;
-          display: flex;
-          justify-content: flex-end;
-          align-items: baseline;
-          label {
-            font-size: 131%;
-          }
-        }
-        .MuiPaper-root {
-          min-width: unset !important;
-          width: 97%;
-          button {
-            .MuiCardContent-root {
-              .MuiTypography-h5 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 1;
-              }
-              .MuiTypography-body2 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-              }
+      }
+      .MuiPaper-root {
+        min-width: unset !important;
+        width: 97%;
+        button {
+          .MuiCardContent-root {
+            .MuiTypography-h5 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
             }
-          }
-        }
-        .paginate {
-          bottom: 3% !important;
-          right: 17% !important;
-          // div {
-          //   width: 53% !important;
-          // }
-        }
-      }
-      .page-info {
-        height: 90% !important;
-        .add-btn {
-          width: 35% !important;
-          align-items: center !important;
-          padding: 3% !important;
-        }
-      }
-      .add-page {
-        height: 90% !important;
-        padding: 4% !important;
-        .add-field {
-          .add-heading {
-            margin-bottom: 4% !important;
-          }
-          .MuiTextarea-root {
-            min-width: 1%;
-          }
-        }
-        .add-btn {
-          padding: 3% !important;
-        }
-      }
-      .btn-text {
-        font-size: 45% !important;
-      }
-      .login-top {
-        padding: 8% 0% !important;
-        img {
-          width: 50% !important;
-        }
-      }
-      .log-option-top {
-        font-size: 56% !important;
-      }
-      .err-msg {
-        img {
-          width: 16% !important;
-        }
-        div {
-          font-size: 57% !important;
-        }
-      }
-      .heading {
-        font-size: 100% !important;
-      }
-      .login-content{
-      width: 76% !important;
-    }
-    }
-  }
-  @media screen and (min-width: 401px) and (max-width: 600px) {
-    .App {
-      // width: calc(100% - 162px);
-      width: 100%;
-      .card-page {
-        margin: 12% 0% 0 0% !important;
-        width: 96% !important;
-        height: 83% !important;
-        justify-content: center !important;
-        .add-btn {
-          padding: 3% 1% !important;
-          font-size: 107% !important;
-        }
-        .drop-page {
-          top: 1% !important;
-          right: unset !important;
-          left: 0;
-          height: 8%;
-          width: 49% !important;
-          display: flex;
-          justify-content: flex-end;
-          align-items: baseline;
-          label {
-            font-size: 131%;
-          }
-        }
-        .MuiPaper-root {
-          min-width: unset !important;
-          width: 97%;
-          max-width: unset !important;
-          button {
-            .MuiCardContent-root {
-              .MuiTypography-h5 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 1;
-              }
-              .MuiTypography-body2 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-              }
-            }
-          }
-        }
-        .paginate {
-          bottom: 0% !important;
-          right: 16% !important;
-        }
-      }
-      .page-info {
-        height: 90% !important;
-        .add-btn {
-          width: 35% !important;
-          align-items: center !important;
-          padding: 3% !important;
-        }
-      }
-      .add-page {
-        height: 90% !important;
-        padding: 4% !important;
-        .add-field {
-          .add-heading {
-            margin-bottom: 4% !important;
-          }
-          .MuiTextarea-root {
-            min-width: 1%;
-          }
-        }
-        .add-btn {
-          padding: 3% !important;
-        }
-      }
-      .login-content{
-      width: 76% !important;
-    }
-    }
-  }
-  @media screen and (min-width: 601px) and (max-width: 800px) {
-    .App {
-      // width: calc(100% - 162px);
-      width: 100%;
-      .card-page {
-        margin: 20% 0% 0 0% !important;
-        width: 96% !important;
-        justify-content: center !important;
-        .add-btn {
-          padding: 3% 1% !important;
-          font-size: 107% !important;
-        }
-        .drop-page {
-          top: 1% !important;
-          right: unset !important;
-          left: 0;
-          height: 8%;
-          width: 49% !important;
-          display: flex;
-          justify-content: flex-end;
-          align-items: baseline;
-          label {
-            font-size: 131%;
-          }
-        }
-        .MuiPaper-root {
-          min-width: unset !important;
-          width: 97%;
-          button {
-            .MuiCardContent-root {
-              .MuiTypography-h5 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 1;
-              }
-              .MuiTypography-body2 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-              }
+            .MuiTypography-body2 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 4;
             }
           }
         }
       }
-      .page-info {
-        height: 90% !important;
-        .add-btn {
-          width: 35% !important;
-          align-items: center !important;
-          padding: 3% !important;
+      .paginate {
+        bottom: 3% !important;
+        right: 17% !important;
+        // div {
+        //   width: 53% !important;
+        // }
+      }
+    }
+    .page-info {
+      height: 90% !important;
+      .add-btn {
+        width: 35% !important;
+        align-items: center !important;
+        padding: 3% !important;
+      }
+    }
+    .add-page {
+      height: 90% !important;
+      padding: 4% !important;
+      .add-field {
+        .add-heading {
+          margin-bottom: 4% !important;
+        }
+        .MuiTextarea-root {
+          min-width: 1%;
         }
       }
-      .add-page {
-        height: 90% !important;
-        padding: 4% !important;
-        .add-field {
-          .add-heading {
-            margin-bottom: 4% !important;
-          }
-          .MuiTextarea-root {
-            min-width: 1%;
-          }
-        }
-        .add-btn {
-          padding: 3% !important;
-        }
+      .add-btn {
+        padding: 3% !important;
       }
-      .login-content{
+    }
+    .btn-text {
+      font-size: 45% !important;
+    }
+    .login-top {
+      padding: 8% 0% !important;
+      img {
+        width: 50% !important;
+      }
+    }
+    .log-option-top {
+      font-size: 56% !important;
+    }
+    .err-msg {
+      img {
+        width: 16% !important;
+      }
+      div {
+        font-size: 57% !important;
+      }
+    }
+    .heading {
+      font-size: 100% !important;
+    }
+    .login-content {
       width: 76% !important;
     }
-    }
   }
-  @media screen and (min-width: 801px) and (max-width: 1000px) {
-    .App {
-      width: 100%;
-      .card-page {
-        margin: 12% 0% 0 0% !important;
-        width: 94% !important;
-        height: 86% !important;
-        .add-btn {
-          padding: 3% 1% !important;
-          font-size: 107% !important;
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+  .App {
+    // width: calc(100% - 162px);
+    width: 100%;
+    .card-page {
+      margin: 12% 0% 0 0% !important;
+      width: 96% !important;
+      height: 83% !important;
+      justify-content: center !important;
+      .add-btn {
+        padding: 3% 1% !important;
+        font-size: 107% !important;
+      }
+      .back {
+        left: 8% !important;
+        width: 26%;
+      }
+      .drop-page {
+        top: 1% !important;
+        right: unset !important;
+        left: 0;
+        height: 8%;
+        width: 49% !important;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        label {
+          font-size: 131%;
         }
-        .drop-page {
-          top: 1% !important;
-          right: unset !important;
-          left: 0;
-          height: 8%;
-          width: 49% !important;
-          display: flex;
-          justify-content: flex-end;
-          align-items: baseline;
-          label {
-            font-size: 131%;
-          }
-        }
-        .MuiPaper-root {
-          min-width: unset !important;
-          width: 97%;
-          button {
-            .MuiCardContent-root {
-              .MuiTypography-h5 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 1;
-              }
-              .MuiTypography-body2 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-              }
+      }
+      .MuiPaper-root {
+        min-width: unset !important;
+        width: 97%;
+        max-width: unset !important;
+        button {
+          .MuiCardContent-root {
+            .MuiTypography-h5 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+            }
+            .MuiTypography-body2 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 4;
             }
           }
         }
-        .paginate {
-          bottom: 2% !important;
+      }
+      .paginate {
+        bottom: 0% !important;
+        right: 16% !important;
+      }
+    }
+    .page-info {
+      height: 90% !important;
+      .add-btn {
+        width: 35% !important;
+        align-items: center !important;
+        padding: 3% !important;
+      }
+    }
+    .add-page {
+      height: 90% !important;
+      padding: 4% !important;
+      .add-field {
+        .add-heading {
+          margin-bottom: 4% !important;
+        }
+        .MuiTextarea-root {
+          min-width: 1%;
         }
       }
-      .page-info {
-        height: 90% !important;
-        .add-btn {
-          width: 35% !important;
-          align-items: center !important;
-          padding: 3% !important;
-        }
+      .add-btn {
+        padding: 3% !important;
       }
-      .add-page {
-        height: 90% !important;
-        padding: 4% !important;
-        .add-field {
-          .add-heading {
-            margin-bottom: 4% !important;
-          }
-          .MuiTextarea-root {
-            min-width: 1%;
-          }
-        }
-        .add-btn {
-          padding: 3% !important;
-        }
-      }
-      .login-content{
+    }
+    .login-content {
       width: 76% !important;
     }
-    }
   }
-  @media screen and (min-width: 1001px) and (max-width: 1200px) {
-    .App {
-      width: 100%;
-      .card-page {
-        margin: 9% 0% 0 0% !important;
-        width: 94% !important;
-        height: 74% !important;
-        .add-btn {
-          padding: 3% 1% !important;
-          font-size: 107% !important;
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .App {
+    // width: calc(100% - 162px);
+    width: 100%;
+    .card-page {
+      margin: 20% 0% 0 0% !important;
+      width: 96% !important;
+      justify-content: center !important;
+      .add-btn {
+        padding: 3% 1% !important;
+        font-size: 107% !important;
+      }
+      .back {
+        width: 14%;
+      }
+      .drop-page {
+        top: 1% !important;
+        right: unset !important;
+        left: 0;
+        height: 8%;
+        width: 49% !important;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        label {
+          font-size: 131%;
         }
-        .drop-page {
-          top: 1% !important;
-          right: unset !important;
-          left: 0;
-          height: 8%;
-          width: 49% !important;
-          display: flex;
-          justify-content: flex-end;
-          align-items: baseline;
-          label {
-            font-size: 131%;
-          }
-        }
-        .MuiPaper-root {
-          min-width: unset !important;
-          width: 97%;
-          button {
-            .MuiCardContent-root {
-              .MuiTypography-h5 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 1;
-              }
-              .MuiTypography-body2 {
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                -webkit-line-clamp: 4;
-              }
+      }
+      .MuiPaper-root {
+        min-width: unset !important;
+        width: 97%;
+        button {
+          .MuiCardContent-root {
+            .MuiTypography-h5 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+            }
+            .MuiTypography-body2 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 4;
             }
           }
         }
-        .paginate {
-          bottom: 2% !important;
+      }
+    }
+    .page-info {
+      height: 90% !important;
+      .add-btn {
+        width: 35% !important;
+        align-items: center !important;
+        padding: 3% !important;
+      }
+    }
+    .add-page {
+      height: 90% !important;
+      padding: 4% !important;
+      .add-field {
+        .add-heading {
+          margin-bottom: 4% !important;
+        }
+        .MuiTextarea-root {
+          min-width: 1%;
         }
       }
-      .page-info {
-        height: 90% !important;
-        .add-btn {
-          width: 35% !important;
-          align-items: center !important;
-          padding: 3% !important;
-        }
+      .add-btn {
+        padding: 3% !important;
       }
-      .add-page {
-        height: 90% !important;
-        padding: 4% !important;
-        .add-field {
-          .add-heading {
-            margin-bottom: 4% !important;
-          }
-          .MuiTextarea-root {
-            min-width: 1%;
-          }
-        }
-        .add-btn {
-          padding: 3% !important;
-        }
-      }
-      .login-content{
+    }
+    .login-content {
       width: 76% !important;
     }
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  .App {
+    width: 100%;
+    .card-page {
+      margin: 12% 0% 0 0% !important;
+      width: 94% !important;
+      height: 86% !important;
+      .add-btn {
+        padding: 3% 1% !important;
+        font-size: 107% !important;
+      }
+      .back {
+        left: 4% !important;
+        width: 14%;
+      }
+      .drop-page {
+        top: 1% !important;
+        right: unset !important;
+        left: 0;
+        height: 8%;
+        width: 49% !important;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        label {
+          font-size: 131%;
+        }
+      }
+      .MuiPaper-root {
+        min-width: unset !important;
+        width: 97%;
+        button {
+          .MuiCardContent-root {
+            .MuiTypography-h5 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+            }
+            .MuiTypography-body2 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 4;
+            }
+          }
+        }
+      }
+      .paginate {
+        bottom: 2% !important;
+      }
+    }
+    .page-info {
+      height: 90% !important;
+      .add-btn {
+        width: 35% !important;
+        align-items: center !important;
+        padding: 3% !important;
+      }
+    }
+    .add-page {
+      height: 90% !important;
+      padding: 4% !important;
+      .add-field {
+        .add-heading {
+          margin-bottom: 4% !important;
+        }
+        .MuiTextarea-root {
+          min-width: 1%;
+        }
+      }
+      .add-btn {
+        padding: 3% !important;
+      }
+    }
+    .login-content {
+      width: 76% !important;
     }
   }
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+  .App {
+    width: 100%;
+    .card-page {
+      margin: 9% 0% 0 0% !important;
+      width: 94% !important;
+      height: 74% !important;
+      .add-btn {
+        padding: 3% 1% !important;
+        font-size: 107% !important;
+      }
+      .drop-page {
+        top: 1% !important;
+        right: unset !important;
+        left: 0;
+        height: 8%;
+        width: 49% !important;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        label {
+          font-size: 131%;
+        }
+      }
+      .MuiPaper-root {
+        min-width: unset !important;
+        width: 97%;
+        button {
+          .MuiCardContent-root {
+            .MuiTypography-h5 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 1;
+            }
+            .MuiTypography-body2 {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              -webkit-line-clamp: 4;
+            }
+          }
+        }
+      }
+      .paginate {
+        bottom: 2% !important;
+      }
+    }
+    .page-info {
+      height: 90% !important;
+      .add-btn {
+        width: 35% !important;
+        align-items: center !important;
+        padding: 3% !important;
+      }
+    }
+    .add-page {
+      height: 90% !important;
+      padding: 4% !important;
+      .add-field {
+        .add-heading {
+          margin-bottom: 4% !important;
+        }
+        .MuiTextarea-root {
+          min-width: 1%;
+        }
+      }
+      .add-btn {
+        padding: 3% !important;
+      }
+    }
+    .login-content {
+      width: 76% !important;
+    }
+  }
+}
