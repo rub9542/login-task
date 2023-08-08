@@ -733,6 +733,12 @@
     .login-content {
       width: 76% !important;
     }
+      .login-page{
+      .add-btn{
+            padding: 3% !important;
+            width: 24% !important 
+      }
+    }
   }
 }
 @media screen and (max-width: 400px) and (min-width: 301px) {
@@ -841,6 +847,12 @@
     .login-content {
       width: 76% !important;
     }
+    .login-page{
+      .add-btn{
+            padding: 3% !important;
+            width: 24% !important 
+      }
+    }
   }
 }
 @media screen and (min-width: 401px) and (max-width: 600px) {
@@ -927,6 +939,12 @@
     .login-content {
       width: 76% !important;
     }
+      .login-page{
+      .add-btn{
+            padding: 3% !important;
+            width: 24% !important 
+      }
+    }
   }
 }
 @media screen and (min-width: 601px) and (max-width: 800px) {
@@ -1005,6 +1023,12 @@
     }
     .login-content {
       width: 76% !important;
+    }
+      .login-page{
+      .add-btn{
+            padding: 3% !important;
+            width: 24% !important 
+      }
     }
   }
 }
@@ -1088,6 +1112,12 @@
     .login-content {
       width: 76% !important;
     }
+      .login-page{
+      .add-btn{
+            padding: 3% !important;
+            width: 24% !important 
+      }
+    }
   }
 }
 @media screen and (min-width: 1001px) and (max-width: 1200px) {
@@ -1165,6 +1195,13 @@
     }
     .login-content {
       width: 76% !important;
+    }
+      .login-page{
+      .add-btn{
+           padding: 1% !important;
+    width: 24% !important;
+    left: 2% !important;
+      }
     }
   }
 }
